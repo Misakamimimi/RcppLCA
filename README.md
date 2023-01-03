@@ -15,7 +15,7 @@
 * A C++ compiler like [gcc](https://gcc.gnu.org/)
 * [Armadillo](http://arma.sourceforge.net/)
 * [LAPACK](http://www.netlib.org/lapack/)
-* [OpenBLAS]
+* [OpenBLAS](https://www.openblas.net/)
 ## 利用R和devtools::install_github()进行安装
 ```
 devtools::install_github("Misakamimimi/RcppLCA")
