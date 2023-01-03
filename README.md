@@ -20,3 +20,16 @@
 ```
 devtools::install_github("Misakamimimi/RcppLCA")
 ```
+## 参考文献
+* Dziak, J. J., Lanza, S. T., & Tan, X. (2014). Effect size, statistical power,
+  and sample size requirements for the bootstrap likelihood ratio test in latent
+  class analysis. *Structural Equation Modeling: A Multidisciplinary Journal*,
+  21(4), 534-552.
+  [[link]](https://www.tandfonline.com/doi/full/10.1080/10705511.2014.919819?casa_token=LgaSzKeeB8MAAAAA%3AB80XwZEIkLOIVsD4Gvp6O0gfktOnIqA6dOBBvUZIjjhs-7ilLIZJC_TmxCh8Umh45d0sWez4-em9)
+* Linzer, D.A. & Lewis, J. (2013). poLCA: Polytomous Variable Latent
+  Class Analysis. R package version 1.4.
+  [[link]](https://github.com/dlinzer/poLCA)
+* Linzer, D.A. & Lewis, J.B. (2011). poLCA: An R package for polytomous
+  variable latent class analysis. *Journal of Statistical Software*,
+  42(10): 1-29.
+  [[link]](http://www.jstatsoft.org/v42/i10)
