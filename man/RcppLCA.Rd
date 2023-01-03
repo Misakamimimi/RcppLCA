@@ -1,6 +1,6 @@
 \name{RcppLCA}
 \alias{RcppLCA}
-\title{Latent class analysis of polytomous outcome variables}
+\title{Latent class analysis using Armadillo}
 \description{Parameter estimations of latent class analysis for polytomous outcome variables.}
 \usage{
 RcppLCA(formula, data, nclass = 2, maxiter = 1000, 
