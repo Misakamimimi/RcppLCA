@@ -63,4 +63,3 @@ M0 <- RcppLCA(f,values,nclass=1) # log-likelihood: -543.6498
 M1 <- RcppLCA(f,values,nclass=2) # log-likelihood: -504.4677
 M2 <- RcppLCA(f,values,nclass=3,maxiter=8000) # log-likelihood: -503.3011
 }
-\keyword{methods}
