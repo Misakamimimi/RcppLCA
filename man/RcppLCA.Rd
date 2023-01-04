@@ -30,9 +30,9 @@ RcppLCA(formula, data, nclass = 2, maxiter = 1000,
 \item{probs.se}{standard errors of estimated class-conditional response probabilities, in the same format as \code{probs}.}
 \item{P}{sizes of each latent class; equal to the mixing proportions in the basic latent class model, or the mean of the priors in the latent class regression model.}
 \item{P.se}{the standard errors of the estimated \code{P}.}
-\item{posterior}{matrix of posterior class membership probabilities; also see function \code{\link{RcppLCA.posterior}}.}
+\item{posterior}{matrix of posterior class membership probabilities.}
 \item{predclass}{vector of predicted class memberships, by modal assignment.}
-\item{predcell}{table of observed versus predicted cell counts for cases with no missing values; also see functions \code{\link{RcppLCA.table}} and \code{\link{RcppLCA.predcell}}.}
+\item{predcell}{table of observed versus predicted cell counts for cases with no missing values.}
 \item{llik}{maximum value of the log-likelihood.}
 \item{numiter}{number of iterations until reaching convergence.}
 \item{maxiter}{maximum number of iterations through which the estimation algorithm was set to run.}
