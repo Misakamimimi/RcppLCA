@@ -29,10 +29,8 @@ RcppLCA(formula, data, nclass = 2, maxiter = 1000,
 \item{probs}{estimated class-conditional response probabilities.}
 \item{probs.se}{standard errors of estimated class-conditional response probabilities, in the same format as \code{probs}.}
 \item{P}{sizes of each latent class; equal to the mixing proportions in the basic latent class model, or the mean of the priors in the latent class regression model.}
-\item{P.se}{the standard errors of the estimated \code{P}.}
 \item{posterior}{matrix of posterior class membership probabilities.}
 \item{predclass}{vector of predicted class memberships, by modal assignment.}
-\item{predcell}{table of observed versus predicted cell counts for cases with no missing values.}
 \item{llik}{maximum value of the log-likelihood.}
 \item{numiter}{number of iterations until reaching convergence.}
 \item{maxiter}{maximum number of iterations through which the estimation algorithm was set to run.}
@@ -44,7 +42,6 @@ RcppLCA(formula, data, nclass = 2, maxiter = 1000,
 \item{time}{length of time it took to run the model.}
 \item{npar}{number of degrees of freedom used by the model (estimated parameters).}
 \item{resid.df}{number of residual degrees of freedom.}
-\item{attempts}{a vector containing the maximum log-likelihood values found in each of the \code{nrep} attempts to fit the model.}
 \item{eflag}{Logical, error flag. \code{TRUE} if estimation algorithm needed to automatically restart with new initial parameters. A restart is caused in the event of computational/rounding errors that result in nonsensical parameter estimates.}
 \item{probs.start}{A list of matrices containing the class-conditional response probabilities used as starting values in the estimation algorithm. If the algorithm needed to restart (see \code{eflag}), then this contains the starting values used for the final, successful, run.}
 \item{probs.start.ok}{Logical. \code{FALSE} if \code{probs.start} was incorrectly specified by the user, otherwise \code{TRUE}.}
