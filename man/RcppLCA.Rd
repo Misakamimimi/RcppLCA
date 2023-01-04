@@ -18,7 +18,7 @@ RcppLCA(formula, data, nclass = 2, maxiter = 1000,
 \item{nrep}{Number of times to estimate the model, using different values of \code{probs.start}.  The default is one.  Setting \code{nrep}>1 automates the search for the global---rather than just a local---maximum of the log-likelihood function. \code{RcppLCA} returns the parameter estimates corresponding to the model with the greatest log-likelihood.}
 \item{verbose}{Logical, indicating whether \code{RcppLCA} should output to the screen the results of the model.  If \code{FALSE}, no output is produced. The default is \code{TRUE}.}
 \item{calc.se}{Logical, indicating whether \code{RcppLCA} should calculate the standard errors of the estimated class-conditional response probabilities and mixing proportions.  The default is \code{TRUE}; can only be set to \code{FALSE} if estimating a basic model with no concomitant variables specified in \code{formula}.}
-\item{num_thread}{The number of cores used for parallel computing, which defaults to all}
+\item{num_thread}{The number of cores used for parallel computing, which defaults to all.}
 }
 \value{
 \code{RcppLCA} returns an object of class RcppLCA; a list containing the following elements:
