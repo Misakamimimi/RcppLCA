@@ -49,14 +49,16 @@ RcppLCA(formula, data, nclass = 2, maxiter = 1000,
 }
 \examples{
 ##
-## Three models without covariates:
+## Four models without covariates:
 ## M0: Loglinear independence model.
 ## M1: Two-class latent class model.
 ## M2: Three-class latent class model.
+## M3: Four-class latent class model using 8 threads and 16 nrep.    
 ##
 data(values)
 f <- cbind(A,B,C,D)~1
 M0 <- RcppLCA(f,values,nclass=1) # log-likelihood: -543.6498
 M1 <- RcppLCA(f,values,nclass=2) # log-likelihood: -504.4677
 M2 <- RcppLCA(f,values,nclass=3,maxiter=8000) # log-likelihood: -503.3011
+M3 <- RcppLCA(f,values,nclass=4,num_thread=8,nrep=16) # log-likelihood: -503.1077 
 }
